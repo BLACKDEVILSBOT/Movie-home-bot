@@ -47,12 +47,12 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/moviehomeofficial'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://t.me/nokkiiru_nnoippokittum')
+        InlineKeyboardButton('♻️ Group', url='https://t.me/moviehomeofficial'),
+        InlineKeyboardButton('Channel 📋', url ='https://t.me/nokkiiru_nnoippokittum')
     ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/Moviehomeofficial')
+        InlineKeyboardButton('⚙ Help', callback_data="help")
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
+        InlineKeyboardButton('Close 🔒', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -71,7 +71,7 @@ async def start(bot, update):
 async def help(bot, update):
     buttons = [[
         InlineKeyboardButton('Home ⚡', callback_data='start'),
-        InlineKeyboardButton('About 🚩', callback_data='about')
+        InlineKeyboardButton('About ✨️', callback_data='about')
     ],[
         InlineKeyboardButton('Close 🔐', callback_data='close')
     ]]
