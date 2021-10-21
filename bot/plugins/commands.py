@@ -59,7 +59,6 @@ async def start(bot, update):
     
     await bot.send_message(
         chat_id=update.chat.id,
-        photo="https://te.legra.ph/file/ea7985ec4a38f656edb7c.jpg",
         text=Translation.START_TEXT.format(
                 update.from_user.first_name),
         reply_markup=reply_markup,
