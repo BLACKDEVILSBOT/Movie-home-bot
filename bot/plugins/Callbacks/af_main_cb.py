@@ -450,9 +450,7 @@ async def callback_data(bot, update: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('About 🚩', callback_data='about')
         ],[
-            InlineKeyboardButton('Close 🔐', callback_data='close')
-        ]]
-    
+           
         reply_markup = InlineKeyboardMarkup(buttons)
         
         await update.message.edit_text(
