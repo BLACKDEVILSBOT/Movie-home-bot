@@ -207,7 +207,7 @@ async def auto_filter(bot: Client, update: Message):
             await bot.send_message(
                 chat_id = update.chat.id,
                 photo= MASSAGE_PHOTO
-                text=f"Found {(len_results)} Results For Your Movie in by @moviehomeofficial : <code>{query}</code>",
+                text=f"Found {(len_results)} Results For Your Movie <code>{query}</code>",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
