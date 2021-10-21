@@ -206,13 +206,13 @@ async def auto_filter(bot: Client, update: Message):
         try:
             await bot.send_message(
                 chat_id = update.chat.id,
-                text=f"Found {(len_results)} Results For Your Movie <code>{query}</code>",
+                text=f"🔱 𝗙𝗼𝘂𝗻𝗱 {(len_results)} 𝗥𝗲𝘀𝘂𝗹𝘁𝘀 𝗙𝗼𝗿 𝗬𝗼𝘂𝗿 𝗤𝘂𝗲𝗿𝘆:<code>{query}</code> ⚠️ᴛʜɪ𝘀 ᴍᴇ𝘀𝘀ᴀɢᴇ ᴅᴇʟᴇᴛᴇ ᴡɪᴛʜɪɴ 𝟻 ᴍɪɴᴜᴛᴇ𝘀",
                 reply_markup=reply_markup,
                 parse_mode="html",
                 reply_to_message_id=update.message_id
             )
 
-        except ButtonDataInvalid:
+        except ButtonDataInvalid:                                 
             print(result[0])
         
         except Exception as e:
